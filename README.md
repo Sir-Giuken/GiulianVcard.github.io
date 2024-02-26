@@ -1,56 +1,16 @@
-from PIL import Image, ImageDraw, ImageFont
-import qrcode
+# Giulian Kenneth Sirica
 
-# Datos personales
-nombre = "Giulian"
-segundo_nombre = "Kenneth"
-apellido = "Sirica"
-correo = "sirgiukeno@gmail.com"
-numero = "691350409"
-telegram = "@Giulian_Sirica"
-discord = "giulian_sirica"
-ruta_foto = "yo.jpg"  # Ruta de la foto
+![Giulian Kenneth Sirica](ruta-a-tu-foto.jpg) <!-- Cambia 'ruta-a-tu-foto.jpg' por la URL de la imagen subida a tu repositorio -->
 
-# Crear imagen base para la VCard
-ancho, alto = 400, 250
-vcard = Image.new('RGB', (ancho, alto), 'white')
-dibujo = ImageDraw.Draw(vcard)
+## Contacto
+- **Correo:** sirgiukeno@gmail.com
+- **Teléfono:** 691350409
+- **Telegram:** [@Giulian_Sirica](https://t.me/Giulian_Sirica)
+- **Discord:** giulian_sirica
 
-# Cargar y añadir la foto
-foto = Image.open(ruta_foto)
-foto = foto.resize((80, 80))  # Ajusta el tamaño según necesites
-vcard.paste(foto, (10, 10))
+## Sobre mí
+Incluye aquí un breve párrafo sobre ti, tus intereses, experiencia profesional o educación.
 
-# Añadir texto
-fuente = ImageFont.load_default()
-texto = f"{nombre} {segundo_nombre} {apellido}\n{correo}\n{numero}\nTelegram: {telegram}\nDiscord: {discord}"
-dibujo.text((100, 10), texto, fill="black", font=fuente)
+![Código QR](ruta-a-tu-codigo-qr.jpg) <!-- Cambia 'ruta-a-tu-codigo-qr.jpg' por la URL del código QR subido a tu repositorio -->
 
-# Datos personales para el formato vCard
-vcard_data = (
-    f"BEGIN:VCARD\n"
-    f"N:{apellido};{nombre};{segundo_nombre};;\n"
-    f"FN:{nombre} {segundo_nombre} {apellido}\n"
-    f"EMAIL:{correo}\n"
-    f"TEL;TYPE=CELL:{numero}\n"
-    f"X-SOCIALPROFILE;TYPE=telegram:user:{telegram}\n"
-    f"X-SOCIALPROFILE;TYPE=discord:user:{discord}\n"
-    f"END:VCARD"
-)
-
-# Crear y configurar el código QR
-qr = qrcode.QRCode(
-    version=1,
-    error_correction=qrcode.constants.ERROR_CORRECT_H,
-    box_size=10,
-    border=4,
-)
-qr.add_data(vcard_data)
-qr.make(fit=True)
-
-qr_img = qr.make_image(fill_color="black", back_color="white")
-qr_img = qr_img.resize((100, 100))  # Tamaño aumentado para mejorar la legibilidad
-vcard.paste(qr_img, (ancho-110, alto-110))
-
-# Guardar la VCard
-vcard.save("tu_vcard.png")
+*Escanea el código QR para obtener más información.*
