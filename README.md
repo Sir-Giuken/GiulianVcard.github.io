@@ -9,7 +9,7 @@ correo = "sirgiukeno@gmail.com"
 numero = "691350409"
 telegram = "@Giulian_Sirica"
 discord = "giulian_sirica"
-ruta_foto = 'C:\\Users\\sirgi\\OneDrive - Universitat de Valencia\\Escritorio\\VCARD\\yo.jpg'  # Ruta de la foto
+ruta_foto = "yo.jpg"  # Ruta de la foto
 
 # Crear imagen base para la VCard
 ancho, alto = 400, 250
