@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;  /* Si deseas bordes redondeados para la foto */
+    margin-top: 20px;
+}
