@@ -1,13 +1,92 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
-img {
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;  /* Si deseas bordes redondeados para la foto */
-    margin-top: 20px;
+.vcard {
+    background-color: #ffffff;
+    margin: 10px auto;
+    max-width: 840px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    align-items: left;
+    display: flex;
+}
+
+.vcard header, .vcard section {
+    margin-bottom: 20px;
+}
+
+.vcard h1, .vcard h2 {
+    color: #333333;
+}
+
+.vcard p, .vcard a {
+    color: #666666;
+}
+
+.vcard a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.vcard a:hover {
+    text-decoration: underline;
+}
+
+.redes-sociales ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.redes-sociales li {
+    display: inline;
+    margin-right: 10px;
+}
+
+
+.card {
+    background-color: #ffffff;
+    max-width: 1000px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.img-perfil {
+    background-color: none;
+    margin: 2%;
+    margin-bottom: 2%;
+    max-width: 120px;
+    text-align: center;
+    border-radius: 10%;
+
+}
+
+.header {
+    background-color: #ffffff;
+    margin: 10px auto;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.content {
+    background-color: #ffffff;
+    margin: 10px auto;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.info{
+    background-color: black;
+    margin: 10px auto;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
 }
